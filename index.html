@@ -1,24 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Hello World</title>
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="images/hello-icon-152.png">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="white"/>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Hello World">
-  <meta name="msapplication-TileImage" content="images/hello-icon-144.png">
-  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Exa&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="manifest" href="./manifest.json">
+  <title>Music App</title>
 </head>
-<body class="fullscreen">
-  <div class="container">
-    <h1 class="title">Hello World!</h1>
+<body>
+  <div class="app">
+    <header>
+      <h1>MixCentro</h1>
+      <p>Make music with only one tap</p>
+    </header>
+    <div class="pads">
+      <div class="pad-top">
+        <div class="pad1">
+          <audio class="sound" src="./assets/audio/bubbles.mp3"></audio>
+        </div>
+        <div class="pad2">
+          <audio class="sound" src="./assets/audio/clay.mp3"></audio>
+        </div>
+        <div class="pad3">
+          <audio class="sound" src="./assets/audio/confetti.mp3"></audio>
+        </div>
+      </div>
+      <div class="pad-bottom">
+        <div class="pad4">
+          <audio class="sound" src="./assets/audio/glimmer.mp3"></audio>
+        </div>
+        <div class="pad5">
+          <audio class="sound" src="./assets/audio/moon.mp3"></audio>
+        </div>
+        <div class="pad6">
+          <audio class="sound" src="./assets/audio/ufo.mp3"></audio>
+        </div>
+      </div>
+    </div>
   </div>
-  <script src="js/main.js"></script>
+
+  <script src="./assets/js/index.js"></script>
 </body>
 </html>
