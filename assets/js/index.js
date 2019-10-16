@@ -11,13 +11,6 @@ window.addEventListener('load', ()=>{
     }
   }
 
-  pads.forEach((pad,index) => {
-    pad.addEventListener('click', ()=> {
-      sounds[index].currentTime = 0;
-      sounds[index].play();
-    });
-  });
-
 });
 
 

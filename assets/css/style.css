@@ -6,17 +6,16 @@
 
 body {
   font-family: 'Lexend Exa', sans-serif;
-  background: url('../img/bg/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  color: wheat;
+  color: black;
+  background-color: #ede4be;
 }
 
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -24,7 +23,7 @@ header h1 {
   margin: 50px 0 20px 0;
   text-align: center;
   padding: 2rem;
-  background: black;
+  background: grey;
   font-size: 40px;
 }
 
@@ -34,10 +33,12 @@ header p {
 }
 
 .pads {
-  background: lightblue;
+  background: grey;
   width: 60%;
-  box-shadow: 10px 10px 20px black;
+  height: 20%;
   margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
 }
 
 .pad-top {
@@ -58,30 +59,6 @@ header p {
   height: 100px;
   width: 100px;
   flex: 1;
-}
-
-.pad1 {
-  background: #60d394;
-}
-
-.pad2 {
-  background: #d36060;
-}
-
-.pad3 {
-  background: #c060d3;
-}
-
-.pad4 {
-  background: #d3d160;
-}
-
-.pad5 {
-  background: #606bd3;
-}
-
-.pad6 {
-  background: #60c2d3;
 }
 
 @media (max-width: 480px) {
