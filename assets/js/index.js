@@ -1,10 +1,22 @@
+const send_button = document.getElementById("send");
+  
+  send_button.addEventListener('click', () => {
+    
+    let text = document.getElementById("scan").value
+    send_request({"scan":text})
+    
+
+});
+
+
 var is_good = (xhr, data) => {
   console.log(xhr.status)
   if (xhr.status >= 200 && xhr.status < 300) {
     console.log('Request sent');
+    document.getElementById("scan").value = "";
   }else{
-    console.log('Request failed, rescheduling')
-    setTimeout(function() {send_request(data)}, 10000)    
+    console.log('Request failed, rescheduling');
+    setTimeout(function() {send_request(data)}, 10000);    
   }
 }
 
@@ -38,14 +50,5 @@ window.addEventListener('load', ()=>{
   }
 });
 
-  const send_button = document.getElementById("send");
-  
-  send_button.addEventListener('click', () => {
-    
-    let text = document.getElementById("scan").value
-    send_request({"scan":text})
-    
-
-});
 
 
