@@ -35,31 +35,20 @@ header p {
 .pads {
   background: grey;
   width: 60%;
-  height: 20%;
+  height: 40%;
   margin-bottom: 150px;
   display: flex;
   flex-direction: column;
+
 }
 
-.pad-top {
-  display: flex;
+.divs {
+  background: grey;
+  width: 60%;
+  height: 40%;
+  padding: 20px 40px;
 }
 
-.pad-bottom {
-  display: flex;
-}
-
-.pad-top>div {
-  height: 100px;
-  width: 100px;
-  flex: 1;
-}
-
-.pad-bottom>div {
-  height: 100px;
-  width: 100px;
-  flex: 1;
-}
 
 @media (max-width: 480px) {
   header h1 {
