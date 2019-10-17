@@ -1,13 +1,7 @@
 const staticAssets = [
     './',
     './assets/css/style.css',
-    './assets/js/index.js',
-    './assets/audio/bubbles.mp3',
-    './assets/audio/clay.mp3',
-    './assets/audio/confetti.mp3',
-    './assets/audio/glimmer.mp3',
-    './assets/audio/moon.mp3',
-    './assets/audio/ufo.mp3'
+    './assets/js/index.js'
 ];
 
 self.addEventListener('install', async event => {
